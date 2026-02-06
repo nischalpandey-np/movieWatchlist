@@ -5,9 +5,16 @@ import Watchlist from "./pages/watchList.jsx";
 export default function App() {
   return (
     <BrowserRouter>
-      <nav className="container" style={{ marginBottom: '16px' }}>
-        <Link to="/" style={{ marginRight: '12px' }}>Home</Link>
-        <Link to="/watchlist">Watchlist</Link>
+      <nav className="navbar">
+        <div className="container nav-content">
+          <div className="nav-left">
+            <Link to="/" className="nav-link nav-home">🎬 MovieFlix</Link>
+          </div>
+          <div className="nav-right">
+            <Link to="/" className="nav-link">🏠 Home</Link>
+            <Link to="/watchlist" className="nav-link">⭐ Watchlist</Link>
+          </div>
+        </div>
       </nav>
 
       <Routes>
